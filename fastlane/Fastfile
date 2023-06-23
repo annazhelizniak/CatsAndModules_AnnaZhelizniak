@@ -22,7 +22,7 @@ platform :ios do
   ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "10"
   ENV["FASTLANE_XCODEBUILD_SETTINGS_RETRIES"] = "6" 
   ENV["MATCH_PASSWORD"] = "iossummer"
-    increment_version_number(version_number: "1.2")
+    increment_version_number(version_number: "1.3")
 
     gym
     release = firebase_app_distribution(
