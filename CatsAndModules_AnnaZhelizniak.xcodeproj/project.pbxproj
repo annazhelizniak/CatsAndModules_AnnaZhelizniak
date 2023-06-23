@@ -14,6 +14,8 @@
 		8411C1A72A2CDB9000B36F46 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 8411C1A62A2CDB9000B36F46 /* FirebasePerformance */; };
 		84A22CAC2A2E7A8900C67F45 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 84A22CAB2A2E7A8900C67F45 /* SDWebImage */; };
 		84A22CAF2A2E7B6200C67F45 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 84A22CAE2A2E7B6200C67F45 /* SDWebImageSwiftUI */; };
+		84A9A7E72A4607B5006100C2 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A9A7E42A4607A1006100C2 /* Networking.framework */; };
+		84A9A7E82A4607B5006100C2 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A9A7E42A4607A1006100C2 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84ACF6142A1A5046003A55A6 /* CatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACF6132A1A5046003A55A6 /* CatsApp.swift */; };
 		84ACF6162A1A5046003A55A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACF6152A1A5046003A55A6 /* ContentView.swift */; };
 		84ACF6182A1A5048003A55A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ACF6172A1A5048003A55A6 /* Assets.xcassets */; };
@@ -21,8 +23,6 @@
 		84ACF6252A1A5049003A55A6 /* CatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACF6242A1A5049003A55A6 /* CatsTests.swift */; };
 		84ACF62F2A1A5049003A55A6 /* CatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACF62E2A1A5049003A55A6 /* CatsUITests.swift */; };
 		84ACF6312A1A5049003A55A6 /* CatsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACF6302A1A5049003A55A6 /* CatsUITestsLaunchTests.swift */; };
-		84ACF66F2A1A6267003A55A6 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ACF66B2A1A6213003A55A6 /* Networking.framework */; };
-		84ACF6702A1A6267003A55A6 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84ACF66B2A1A6213003A55A6 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84ACF6732A1A6637003A55A6 /* CatsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACF6722A1A6637003A55A6 /* CatsData.swift */; };
 		84ACF6752A1A6806003A55A6 /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACF6742A1A6806003A55A6 /* CatView.swift */; };
 		84ACF6772A1A6CBE003A55A6 /* CatsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACF6762A1A6CBE003A55A6 /* CatsDetailsView.swift */; };
@@ -30,6 +30,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		84A9A7E32A4607A1006100C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A9A7DE2A4607A1006100C2 /* Networking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84ACF6472A1A5084003A55A6;
+			remoteInfo = Networking;
+		};
+		84A9A7E52A4607A1006100C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A9A7DE2A4607A1006100C2 /* Networking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84ACF6512A1A5087003A55A6;
+			remoteInfo = NetworkingTests;
+		};
 		84ACF6212A1A5049003A55A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84ACF6082A1A5046003A55A6 /* Project object */;
@@ -44,20 +58,6 @@
 			remoteGlobalIDString = 84ACF60F2A1A5046003A55A6;
 			remoteInfo = Cats;
 		};
-		84ACF66A2A1A6213003A55A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84ACF6652A1A6213003A55A6 /* Networking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84ACF6472A1A5084003A55A6;
-			remoteInfo = Networking;
-		};
-		84ACF66C2A1A6213003A55A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84ACF6652A1A6213003A55A6 /* Networking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84ACF6512A1A5087003A55A6;
-			remoteInfo = NetworkingTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				84ACF6702A1A6267003A55A6 /* Networking.framework in Embed Frameworks */,
+				84A9A7E82A4607B5006100C2 /* Networking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +77,7 @@
 /* Begin PBXFileReference section */
 		8411C19B2A2CD9C200B36F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84A5B2CF2A37317A0003AA9B /* task.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = task.sh; sourceTree = "<group>"; };
+		84A9A7DE2A4607A1006100C2 /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = Networking/Networking.xcodeproj; sourceTree = "<group>"; };
 		84ACF6102A1A5046003A55A6 /* CatsAndModules_AnnaZhelizniak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsAndModules_AnnaZhelizniak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ACF6132A1A5046003A55A6 /* CatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsApp.swift; sourceTree = "<group>"; };
 		84ACF6152A1A5046003A55A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		84ACF62A2A1A5049003A55A6 /* CatsAndModules_AnnaZhelizniakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsAndModules_AnnaZhelizniakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ACF62E2A1A5049003A55A6 /* CatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsUITests.swift; sourceTree = "<group>"; };
 		84ACF6302A1A5049003A55A6 /* CatsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		84ACF6652A1A6213003A55A6 /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = ../Networking/Networking.xcodeproj; sourceTree = "<group>"; };
 		84ACF6722A1A6637003A55A6 /* CatsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsData.swift; sourceTree = "<group>"; };
 		84ACF6742A1A6806003A55A6 /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 		84ACF6762A1A6CBE003A55A6 /* CatsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDetailsView.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				8411C1A52A2CDB9000B36F46 /* FirebaseCrashlytics in Frameworks */,
 				8411C1A72A2CDB9000B36F46 /* FirebasePerformance in Frameworks */,
 				8411C1A32A2CDB9000B36F46 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
-				84ACF66F2A1A6267003A55A6 /* Networking.framework in Frameworks */,
+				84A9A7E72A4607B5006100C2 /* Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,12 +128,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84A9A7DF2A4607A1006100C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A9A7E42A4607A1006100C2 /* Networking.framework */,
+				84A9A7E62A4607A1006100C2 /* NetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		84ACF6072A1A5046003A55A6 = {
 			isa = PBXGroup;
 			children = (
+				84A9A7DE2A4607A1006100C2 /* Networking.xcodeproj */,
 				84C002972A38673200211728 /* exportOptions.plist */,
 				84A5B2CF2A37317A0003AA9B /* task.sh */,
-				84ACF6652A1A6213003A55A6 /* Networking.xcodeproj */,
 				84ACF6122A1A5046003A55A6 /* CatsAndModules_AnnaZhelizniak */,
 				84ACF6232A1A5049003A55A6 /* CatsTests */,
 				84ACF62D2A1A5049003A55A6 /* CatsUITests */,
@@ -192,15 +201,6 @@
 				84ACF6302A1A5049003A55A6 /* CatsUITestsLaunchTests.swift */,
 			);
 			path = CatsUITests;
-			sourceTree = "<group>";
-		};
-		84ACF6662A1A6213003A55A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				84ACF66B2A1A6213003A55A6 /* Networking.framework */,
-				84ACF66D2A1A6213003A55A6 /* NetworkingTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		84ACF66E2A1A6237003A55A6 /* Frameworks */ = {
@@ -317,8 +317,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 84ACF6662A1A6213003A55A6 /* Products */;
-					ProjectRef = 84ACF6652A1A6213003A55A6 /* Networking.xcodeproj */;
+					ProductGroup = 84A9A7DF2A4607A1006100C2 /* Products */;
+					ProjectRef = 84A9A7DE2A4607A1006100C2 /* Networking.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -331,18 +331,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		84ACF66B2A1A6213003A55A6 /* Networking.framework */ = {
+		84A9A7E42A4607A1006100C2 /* Networking.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Networking.framework;
-			remoteRef = 84ACF66A2A1A6213003A55A6 /* PBXContainerItemProxy */;
+			remoteRef = 84A9A7E32A4607A1006100C2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84ACF66D2A1A6213003A55A6 /* NetworkingTests.xctest */ = {
+		84A9A7E62A4607A1006100C2 /* NetworkingTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = NetworkingTests.xctest;
-			remoteRef = 84ACF66C2A1A6213003A55A6 /* PBXContainerItemProxy */;
+			remoteRef = 84A9A7E52A4607A1006100C2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
