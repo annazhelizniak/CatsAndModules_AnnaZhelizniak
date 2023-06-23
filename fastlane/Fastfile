@@ -21,8 +21,8 @@ platform :ios do
     # add actions here: https://docs.fastlane.tools/actions
   ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "10"
   ENV["FASTLANE_XCODEBUILD_SETTINGS_RETRIES"] = "6"
-    increment_version_number(version_number: "1.1")
-    match(type: "development")
+    increment_version_number(version_number: "1.2")
+    #match(type: "development")
     gym
     release = firebase_app_distribution(
 	
