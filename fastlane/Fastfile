@@ -23,7 +23,7 @@ platform :ios do
   ENV["FASTLANE_XCODEBUILD_SETTINGS_RETRIES"] = "6" 
   ENV["MATCH_PASSWORD"] = "iossummer"
     increment_version_number(version_number: "1.2")
-    match(type: "development", username: "anna.zhelizniak@ukma.edu.ua", app_identifier: "ua.edu.ukma.Zhelizniak.CatsAndModulesAnnaZhelizniak")
+
     gym
     release = firebase_app_distribution(
 	
