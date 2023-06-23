@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dataSource</key>
+	<string>CATS</string>
+	<key>destination</key>
+	<string>export</string>
+	<key>method</key>
+	<string>development</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>teamID</key>
+	<string>VNU8KKW4GG</string>
+	<key>signingCertificate</key>
+	<string>iPhone Developer: Анна Желізняк (P58LBLY3AS)</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>ua.edu.ukma.Zhelizniak.CatsAndModulesAnnaZhelizniak</key>
+		<string>Анна Желізняк (MacBook Pro — admin) (iOS Developme</string>
+	</dict>
+</dict>
+</plist>

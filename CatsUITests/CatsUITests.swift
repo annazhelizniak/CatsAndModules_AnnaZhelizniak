@@ -38,4 +38,23 @@ final class CatsUITests: XCTestCase {
             }
         }
     }
+    
+    func testTakeScreenshots() {
+      let app = XCUIApplication()
+      setupSnapshot(app)
+      app.launch()
+      sleep(10)
+      let table = app.scrollViews.element (boundBy: 0)
+      XCTAssert (table.exists)
+        
+      let cell = table.children(matching: .other).element (boundBy: 0)
+      XCTAssert (cell.exists)
+        
+      snapshot ("AnnaZhelizniak_MainScreen")
+        
+        
+      cell.tap()
+      sleep(10)
+      snapshot ("AnnaZhelizniak_DetailsScreen")
+    }
 }
